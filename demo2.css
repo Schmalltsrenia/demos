@@ -1,0 +1,193 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+ul > li{
+	list-style: none;
+}
+body{
+	width: 384px;
+	height: 640px;
+	margin: 0 auto;
+	box-shadow: gray 4px 3px 5px 5px;
+	overflow: hidden;
+}
+@media screen and (max-width: 600px){
+	body{
+		width: 100%;
+		height: 100%;
+	}
+}
+#home{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#home:before{
+	content: "";
+	display: table;
+}
+#btn{
+	width: 70px;
+	height: 40px;
+	border-radius: 20px;
+	background-color: rgb(12,65,77);
+	margin: 25px auto auto auto;
+	position: relative;
+}
+#btn:after, .bar, .bar:before, .bar:after{
+	width: 30px;
+	height: 4px;
+	display: block;
+	background-color: white;
+	position: absolute;
+}
+#btn:after{
+	content: "";
+	left: 20px;
+	top: 18px;
+	transform: rotate(-20deg);
+	transform-origin: 100% 50%;
+	visibility: hidden;
+}
+.bar{
+	left: 20px;
+	top: 18px;
+}
+.bar:before{
+	content: "";
+	top: -10px;
+}
+.bar:after{
+	content: "";
+	top: 10px;
+	transition: transform 1s;
+	-o-transition: transform 1s;
+	-ms-transition: transform 1s;
+	-moz-transition: transform 1s;
+	-webkit-transition: transform 1s;
+}
+#home ul{
+	width: 86%;
+	height: 0;
+	margin: -20px auto;
+	background-color: rgb(46,65,74);
+	border-radius: 8px;
+	color: white;
+	overflow: hidden;
+}
+#home ul > li{
+	font-size: 18px;
+	margin: 1.5em auto;
+	text-align: center;
+	cursor: pointer;
+}
+.shadow{
+	box-shadow: rgba(0,0,0,0.3) 0px 0px 0px 1000px;
+}
+.bg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	overflow: hidden;
+	transition: transform 1s;
+}
+.bgChange{
+	transform: scale(0.86);
+}
+.bg:before{
+	content: "";
+	border-top: 600px solid transparent;
+	border-right: 600px solid rgb(243,84,52);
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 100%;
+	z-index: -1;
+}
+.bg h2{
+	color: white;
+	font-size: 50px;
+	margin-top: 70%;
+	margin-left: 20%;
+}
+.bg h2 + p{
+	color: white;
+	font-size: 24px;
+	margin-left: 25%;
+}
+.bg p:nth-child(3){
+	color: white;
+	font-size: 32px;
+	margin-left: 60%;
+	margin-top: 20%;
+}
+.bg div{
+	width: 79%;
+	height: 25px;
+	border-bottom: 2px solid white;
+	color: white;
+	font-size: 16px;
+	margin-left: 46%;
+	transform: rotate(-90deg);
+	transform-origin: 0 0;
+	margin-top: 40%;
+}
+
+/* span动画用 */
+.barDown{
+	background-color: rgb(12,65,77);
+	left: 24px;
+	transition: background-color 0.2s;
+	-o-transition: background-color 0.2s;
+	-ms-transition: background-color 0.2s;
+	-moz-transition: background-color 0.2s;
+	-webkit-transition: background-color 0.2s;
+}
+.barDown:before{
+	transform: rotate(43deg);
+	transform-origin: 0% 50%;
+	transition: transform 1s, transform-origin 1s;
+	-o-transition: transform 1s, transform-origin 1s;
+	-ms-transition: transform 1s, transform-origin 1s;
+	-moz-transition: transform 1s, transform-origin 1s;
+	-webkit-transition: transform 1s, transform-origin 1s;
+}
+.barDown:after{
+	transform: rotate(-43deg);
+	transform-origin: 0% 50%;
+}
+.barUp{
+	left: 20px;
+}
+.barUp:before{
+	transform: rotate(360deg);
+	transform-origin: 50% 50%;
+	transition: transform 1s, transform-origin 1s;
+	-o-transition: transform 1s, transform-origin 1s;
+	-ms-transition: transform 1s, transform-origin 1s;
+	-moz-transition: transform 1s, transform-origin 1s;
+	-webkit-transition: transform 1s, transform-origin 1s;
+}
+.barUp:after{
+	transform: rotate(0deg);
+	transform-origin: 0% 50%;
+}
+#btn.btnUp:after{
+	visibility: visible;
+	transform: rotate(0deg);
+	transition: transform 1s;
+	-o-transition: transform 1s;
+	-ms-transition: transform 1s;
+	-moz-transition: transform 1s;
+	-webkit-transition: transform 1s;
+}

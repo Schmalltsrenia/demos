@@ -1,0 +1,135 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: 384px;
+	height: 640px;
+	margin: 0 auto;
+	box-shadow: gray 4px 3px 5px 5px;
+	overflow: hidden;
+}
+@media screen and (max-width: 600px){
+	body{
+		width: 100%;
+		height: 100%;
+	}
+}
+#contact{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#contact:before{
+	content: "";
+	display: table;
+}
+.c_text{
+	display: block;
+	margin: 35% auto auto 10%;
+	transition: margin-top 1s;
+	-o-transition: margin-top 1s;
+	-ms-transition: margin-top 1s;
+	-moz-transition: margin-top 1s;
+	-webkit-transition: margin-top 1s;
+}
+.c_textchange{
+	margin-top: 30%;
+}
+span.fa.fa-times-circle-o{
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	right: 14px;
+	top: 14px;
+	display: none;
+}
+span.fa.fa-times-circle-o:before{
+	color: rgb(31,122,249);
+	font-size: 26px;
+}
+span.fa.fa-comment-o:before{
+	position: absolute;
+	top: 75px;
+	left: 50px;
+	color: rgb(31,122,249);
+	font-size: 56px;
+	z-index: 1;
+	transition: color 0.7s, font-size 0.7s, left 0.7s, top 0.7s;
+	-o-transition: color 0.7s, font-size 0.7s, left 0.7s, top 0.7s;
+	-ms-transition: color 0.7s, font-size 0.7s, left 0.7s, top 0.7s;
+	-moz-transition: color 0.7s, font-size 0.7s, left 0.7s, top 0.7s;
+	-webkit-transition: color 0.7s, font-size 0.7s, left 0.7s, top 0.7s;
+}
+span.fa.fa-comment-o.commentchange:before{
+	color: white;
+	top: 100px;
+	left: 70px;
+	font-size: 36px;
+}
+.c_text h3{
+	font-size: 32px;
+	margin-bottom: 30px;
+	color: rgb(21,27,46);
+}
+.c_text p{
+	font-size: 18px;
+	margin-top: 5px;
+	color: rgb(21,27,46);
+}
+.c_text p:last-child{
+	margin-top: 30px;
+}
+#contact .formdiv{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 21%;
+	color: white;
+	background-color: rgb(31,122,249);
+}
+#contact .formdiv form{
+	width: 87%;
+	height: 60%;
+	margin: 0 auto;
+}
+#contact .formdiv a{
+	display: inline-block;
+	margin: 50px 20px 0px 45px;
+	color: white;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+.formdiv form p{
+	margin-top: 63px;
+	margin-left: 85px;
+}
+#contact .formdiv textarea{
+	background: none;
+	border: none;
+	border-top: 1px white solid;
+	border-bottom: 1px white solid;
+	width: 100%;
+	height: 100%;
+	margin-top: 25px;
+	font-size: 18px;
+	color: white;
+	resize: none;
+}
+#contact .formdiv input[type="submit"]{
+	background: none;
+	border: none;
+	color: white;
+	font-size: 18px;
+	margin-left: 100%;
+	margin-top: 8px;
+	transform: translateX(-100%);
+}
