@@ -1,11 +1,11 @@
 @font-face{
 	font-family: fas;
-	src: url('https://schmalltsrenia.github.io/resume/fonts/font-awesome-4.7.0/FontAwesome.otf'),
-	url('https://schmalltsrenia.github.io/resume/fonts/font-awesome-4.7.0/fontawesome-webfont.eot'),
-	url('https://schmalltsrenia.github.io/resume/fonts/font-awesome-4.7.0/fontawesome-webfont.svg'),
-	url('https://schmalltsrenia.github.io/resume/fonts/font-awesome-4.7.0/fontawesome-webfont.ttf'),
-	url('https://schmalltsrenia.github.io/resume/fonts/font-awesome-4.7.0/fontawesome-webfont.woff'),
-	url('https://schmalltsrenia.github.io/resume/fonts/font-awesome-4.7.0/fontawesome-webfont.woff2');
+	src: url('./fonts/font-awesome-4.7.0/FontAwesome.otf'),
+	url('./fonts/font-awesome-4.7.0/fontawesome-webfont.eot'),
+	url('./fonts/font-awesome-4.7.0/fontawesome-webfont.svg'),
+	url('./fonts/font-awesome-4.7.0/fontawesome-webfont.ttf'),
+	url('./fonts/font-awesome-4.7.0/fontawesome-webfont.woff'),
+	url('./fonts/font-awesome-4.7.0/fontawesome-webfont.woff2');
 }
 *{
 	padding: 0;
